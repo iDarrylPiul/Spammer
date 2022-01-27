@@ -1807,7 +1807,7 @@ class Auth():
             await rpc.connect()
         except:
             pass
-        owl = OWL(rpc)
+        owl = OWL("rpc")
         await owl.start()
         time.sleep(0.2)
         alreadyPut == true
